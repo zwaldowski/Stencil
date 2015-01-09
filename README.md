@@ -38,6 +38,18 @@ switch result {
 }
 ```
 
+## Installation
+
+Installation with CocoaPods is recommended using CocoaPods 0.36.
+
+```ruby
+pod 'Stencil'
+```
+
+### Sub-projects
+
+Alternatively, you can clone Stencil via git or as a submodule and include `Stencil.xcodeproj` inside your project and add `Stencil.framework` as a target dependency.
+
 ## Philosophy
 
 Stencil follows the same philosophy of Django:
@@ -126,6 +138,22 @@ A for loop allows you to iterate over an array found by variable lookup.
 {% else %}
   The variable was found.
 {% endif %}
+```
+
+#### include
+
+You can include another template using the `include` tag.
+
+```html+django
+{% include "comment.html" %}
+```
+
+The `include` tag requires a TemplateLoader to be found inside your context with the paths, or bundles used to lookup the template.
+
+```swift
+let context = Context(dictionary: [
+  "loader": TemplateLoader(bundle:[NSBundle.mainBundle()])
+])
 ```
 
 #### Building custom tags
