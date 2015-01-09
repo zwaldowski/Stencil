@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "77FAAE5119F91E480029DC5E"
-               BuildableName = "Stencil-OSX.framework"
+               BuildableName = "Stencil.framework"
                BlueprintName = "Stencil-OSX"
                ReferencedContainer = "container:Stencil.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "77FAAE5119F91E480029DC5E"
-            BuildableName = "Stencil-OSX.framework"
+            BuildableName = "Stencil.framework"
             BlueprintName = "Stencil-OSX"
             ReferencedContainer = "container:Stencil.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "77FAAE5119F91E480029DC5E"
-            BuildableName = "Stencil-OSX.framework"
+            BuildableName = "Stencil.framework"
             BlueprintName = "Stencil-OSX"
             ReferencedContainer = "container:Stencil.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "77FAAE5119F91E480029DC5E"
-            BuildableName = "Stencil-OSX.framework"
+            BuildableName = "Stencil.framework"
             BlueprintName = "Stencil-OSX"
             ReferencedContainer = "container:Stencil.xcodeproj">
          </BuildableReference>
