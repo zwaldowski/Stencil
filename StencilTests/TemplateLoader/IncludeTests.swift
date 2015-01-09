@@ -1,7 +1,6 @@
 import Foundation
 import XCTest
 import Stencil
-import PathKit
 
 class IncludeTests: NodeTests {
 

@@ -7,19 +7,22 @@
 //
 
 import Foundation
-import PathKit
 
 // A class for loading a template from disk
 public class TemplateLoader {
-    public let paths:[Path]
+    
+    private lazy var fileManager = NSFileManager()
+    
+    // TODO: Should be URLs
+    public let paths: [String]
 
-    public init(paths:[Path]) {
+    public init(paths: [String]) {
         self.paths = paths
     }
 
     public init(bundle:[NSBundle]) {
         self.paths = bundle.map {
-            return Path($0.bundlePath)
+            return $0.bundlePath
         }
     }
 
@@ -30,9 +33,9 @@ public class TemplateLoader {
     public func loadTemplate(templateNames:[String]) -> Template? {
         for path in paths {
             for templateName in templateNames {
-                let templatePath = path + Path(templateName)
+                let templatePath = path.stringByAppendingPathComponent(templateName)
 
-                if templatePath.exists() {
+                if fileManager.fileExistsAtPath(templatePath) {
                     if let template = Template(path: templatePath) {
                         return template
                     }

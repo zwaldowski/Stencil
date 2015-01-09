@@ -1,5 +1,4 @@
 import Foundation
-import PathKit
 
 extension String : Error {
     public var description:String {
